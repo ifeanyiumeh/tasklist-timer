@@ -3,6 +3,7 @@ import React, { useState, createContext, useContext } from "react";
 import Timer from "./Timer";
 import ControlButtons from "./ControlButtons";
 import TaskContext from "./TaskContext";
+import "./clock.css";
 
 export const NameTimeContext = createContext();
 

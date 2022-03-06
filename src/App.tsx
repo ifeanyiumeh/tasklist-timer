@@ -1,5 +1,4 @@
-import React, { useState, createContext } from "react";
-import ControlButtons from "./components/ControlButtons";
+import React, { useState } from "react";
 
 import "./App.css";
 import Clock from "./components/Clock";
@@ -12,14 +11,12 @@ function App() {
       <input
         type="text"
         className="taskName"
-        placeholder="Type in your class name here"
+        placeholder="Insert your task name here"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
       <Clock name={name} />
-
-      <br />
 
       <TaskList />
     </div>
@@ -27,14 +24,3 @@ function App() {
 }
 
 export default App;
-
-/* <div>
-        <input
-          type="Text"
-          className="taskName"
-          placeholder="Type in your class name here"
-        />
-      </div>
-      <br />
-      <input type="text" placeholder="0" id="time" disabled />
-      <br /> */

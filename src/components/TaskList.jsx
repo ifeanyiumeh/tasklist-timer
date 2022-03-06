@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import TaskContext from "./TaskContext";
+import "./tasklist.css";
 
 function TaskList(props) {
   const taskContext = useContext(TaskContext);
@@ -12,27 +13,29 @@ function TaskList(props) {
   }
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>name</th>
-          <th>time</th>
-        </tr>
-      </thead>
+    <div>
+      <table className="center">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Task Name</th>
+            <th>Task Time in milliseconds</th>
+          </tr>
+        </thead>
 
-      <tbody>
-        {tasks.map((task) => {
-          return (
-            <tr key={task.id}>
-              <td>{task.id}</td>
-              <td>{task.name}</td>
-              <td>{task.time}</td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+        <tbody>
+          {tasks.map((task) => {
+            return (
+              <tr key={task.id}>
+                <td>{task.id}</td>
+                <td>{task.name}</td>
+                <td>{task.time}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
   );
 }
 

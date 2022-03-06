@@ -12,6 +12,7 @@ export default function Timer(props) {
       <span className="digits mili-sec">
         {("0" + ((props.time / 10) % 100)).slice(-2)}
       </span>
+      <br />
     </div>
   );
 }
