@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 //import {UserPro}
-import { TaskContextProvider } from "./components/TaskContext";
+import { TaskContextProvider } from "./components/TaskContext/TaskContext";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import "./App.css";
-import Clock from "./components/Clock";
-import TaskList from "./components/TaskList";
+import Clock from "./components/clock/Clock";
+import TaskList from "./components/TaskList/TaskList";
 
 function App() {
   const [name, setName] = useState("");

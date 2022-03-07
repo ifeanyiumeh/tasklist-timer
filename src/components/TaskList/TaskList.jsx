@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import TaskContext from "./TaskContext";
+import TaskContext from "../TaskContext/TaskContext";
 import "./tasklist.css";
 
 function TaskList(props) {

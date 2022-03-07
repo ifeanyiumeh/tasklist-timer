@@ -1,8 +1,8 @@
 import React, { useState, createContext, useContext } from "react";
 
-import Timer from "./Timer";
-import ControlButtons from "./ControlButtons";
-import TaskContext from "./TaskContext";
+import Timer from "../Timer";
+import ControlButtons from "../ControlButtons/ControlButtons";
+import TaskContext from "../TaskContext/TaskContext";
 import "./clock.css";
 
 export const NameTimeContext = createContext();
